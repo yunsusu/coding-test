@@ -3,6 +3,5 @@ function solution(numbers) {
     numbers.map((item)=>{
         answer+=item
     })
-    answer = answer/numbers.length
-    return answer;
+    return answer/numbers.length;
 }
