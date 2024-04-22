@@ -19,4 +19,4 @@ function solution(name, yearning, photo) {
     return answer;
 }
 
-// 7:36
+// 7:36 ~ 7:44
