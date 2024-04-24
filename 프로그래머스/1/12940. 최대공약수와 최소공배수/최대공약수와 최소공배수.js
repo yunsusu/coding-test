@@ -3,7 +3,7 @@ function solution(n, m) {
     let box = 0;
     
     for(let i = 1; i <= Math.min(n,m); i++){
-        if(Math.min(n,m) % i === 0 && Math.max(n,m)%i === 0){
+        if(n % i === 0 && m%i === 0){
             box = i;
         }
     }
