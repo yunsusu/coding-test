@@ -9,6 +9,5 @@ function solution(n) {
         num1 = num2;
         num2 = answer;
     }
-    let ans = answer
-    return ans;
+    return answer;
 }
