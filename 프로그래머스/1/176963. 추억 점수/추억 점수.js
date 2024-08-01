@@ -4,14 +4,12 @@ function solution(name, yearning, photo) {
     photo.map((item,index)=>{
         let box = 0;
       for(let i = 0; i< item.length;i++){
-        // console.log(item[i])
           for(let o = 0; o<name.length; o++){
-              // console.log(name[o])
-              if(item[i] === name[o]){
+              if(name[o] === item[i]){
                   box += yearning[o]
               }
           }
-    }
+        }
           answer.push(box)
     })
     
@@ -19,4 +17,4 @@ function solution(name, yearning, photo) {
     return answer;
 }
 
-// 7:36 ~ 7:44
+// 7:36 ~ 7:45
