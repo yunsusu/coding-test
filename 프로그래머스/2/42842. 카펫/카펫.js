@@ -1,12 +1,16 @@
 function solution(brown, yellow) {
-    let total = brown + yellow;
-
-    for(let height = 3; height <= Math.sqrt(total); height++) {
-        if(total % height === 0) {
-            let width = total / height;
-            if ((width - 2) * (height - 2) === yellow) {
-                return [width, height];
-            }
+    var answer = [];
+    
+    let num = brown + yellow;
+    for(let width = Math.floor(num/2); width>0; width--){
+        if(num%width===0){
+            let height = num/width;
+               if(height <= width && (width-2)*(height-2) === yellow){
+                   answer = [width,height];
+               }
         }
+        
     }
+    
+    return answer;
 }
